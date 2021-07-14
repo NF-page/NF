@@ -47,12 +47,7 @@ body {
 	-ms-user-select: none!important;
 	user-select: none!important;
 }
-img{
-	-webkit-user-drag: none;
-	-ms-user-drag: none;
-	-moz-user-drag: none;
-	-user-drag: none;
-}
+
 
 ol, ul {
 	list-style: none;
@@ -684,6 +679,10 @@ input, select, textarea {
 		.image img {
 			border-radius: 4px;
 			display: block;
+			-webkit-user-drag: none;
+			-ms-user-drag: none;
+			-moz-user-drag: none;
+			-user-drag: none;
 		}
 
 		.image.left, .image.right {
