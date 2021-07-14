@@ -47,6 +47,12 @@ body {
 	-ms-user-select: none!important;
 	user-select: none!important;
 }
+img{
+	-webkit-user-drag: none;
+	-ms-user-drag: none;
+	-moz-user-drag: none;
+	-user-drag: none;
+}
 
 ol, ul {
 	list-style: none;
@@ -86,6 +92,7 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+
 
 /* Basic */
 
