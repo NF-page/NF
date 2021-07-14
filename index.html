@@ -20,7 +20,7 @@
 					<header id="header">
 
 						<div  class="logo">
-							<img style="width: 100%;" src="images/logonew.png" alt="">
+							<img id="webimage" style="width: 100%;" src="images/logonew.png" alt="">
 						</div>				
 						<div class="content">
 						<!--Audio  -->
@@ -56,11 +56,11 @@
 						<!-- LINK -->
 							<article id="dl">
 								<h2 class="major">Download Link</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<span class="image main"><img id="webimage" src="images/pic01.jpg" alt="" /></span>
 								<button onclick="window.open('https://docs.google.com/spreadsheets/d/1zTF5uRJKfZ3ziLxAZHh47kF85ja34_OFB5C5bVSPumk/pubhtml?fbclid=IwAR0RKFxYdt8tO0nP7qau3JlvIj3GWVribhrnRXWQwnYvRBw6MoXe3vV0uoM#')" class="primary" >View </button>
 								<hr>
 								<h2 class="major">Drive Link</h2>
-								<span class="image main"><img src="images/pic07.png" alt="" /></span>
+								<span class="image main"><img id="webimage" src="images/pic07.png" alt="" /></span>
 								<button onclick="window.open('https://office365e3p1-my.sharepoint.com/:f:/g/personal/blackkight0111_alpha_office365e3_com/EjfQeVbHTJhJpxgUXvqCTUIBS7DKzkNfmQQR6yHlFSBHbQ?e=YKLyXE')" class="primary" >View </button>
 
 								
@@ -128,7 +128,9 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/green-audio-player.min.js"></script>
-				    <script>				   	   				   	   	
+				    <script>	
+					document.getElementById('webimage').setAttribute('draggable', false);
+
 				        document.addEventListener('DOMContentLoaded', function() {
 				            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
 				        });
