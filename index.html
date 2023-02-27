@@ -12,7 +12,9 @@
 
 	</head>
 	<body class="is-preload">
-
+	<div class="loader-wrapper">
+		<div class="loader"></div>
+	</div>	
 		<!-- Wrapper -->
 <div id="wrapper">
 				
@@ -142,22 +144,24 @@
 
 		<!-- BG -->
 			<div id="bg"></div>
-
 		<!-- Scripts -->
-			<script src="assets/js/green-audio-player.min.js"></script>
-				    <script>	
-					document.getElementById('webimage').setAttribute('draggable', false);
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			$(window).on('load', function () {
+				$(".loader-wrapper").hide();
+			});
+		</script>
+		<script src="assets/js/green-audio-player.min.js"></script>
+		<script>
+			document.getElementById('webimage').setAttribute('draggable', false);
 
-				        document.addEventListener('DOMContentLoaded', function() {
-				            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
-				        });
-				    </script>
-
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+			document.addEventListener('DOMContentLoaded', function () {
+				new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+			});
+		</script>
 	</body>
 </html>
